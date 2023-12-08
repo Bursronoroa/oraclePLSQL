@@ -1,6 +1,8 @@
 # Data manipulation with ORACLE PL/SQL
 
-## The aim of this ReadMe is to document how i transformed/mnanipulated a database with PL/SQL. The environment used was the Oracle APEX platform and the database was gotten from the environment.
+![](21.png)
+
+## The aim of this Project is to document how i transformed/mnanipulated a database with PL/SQL. The environment used was the Oracle APEX platform and the database was gotten from the environment.
 i answered some questions with the pictoral evidence of the output.
 
 ## Question 1
@@ -129,7 +131,9 @@ i answered some questions with the pictoral evidence of the output.
        END;
 
   **OUTPUT**
+  
   ![](2.jpg)
+
 
 ## Question 3: 
 
