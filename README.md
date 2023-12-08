@@ -67,15 +67,24 @@ i answered some questions with the pictoral evidence of the output.
 
 **OUTPUT PICTURES**
 
+**order id =  2355**
+![](1a.jpg)
+
+**order id =  2458**
+![](1b.jpg)
+
+**order id =  1456**
+![](1c.jpg)
+
 ## Question 2
 
-**1. Write a PL/SQL program to define a record type rt_employee that include partial columns  from the table oehr_employees. 
+**1. Write a PL/SQL program to define a record type rt_employee that include partial columns  from the table oehr_employees.**
 - Make sure to use the same datatype definitions and Include only the following fields: JOB_ID, SALARY, MANAGER_ID and Department_ID.
 - Define two records r_employee1 and r_employee2 as type rt_employee.
 - ill r_employee1 by the data from the table oehr_employees for the employee 101. Use a cursor for that.
 - Fill r_employee2 by the data from the table oehr_employees for the employee 102. Use a cursor for that.
 - Compare r_employee1 to r_employee2 and display a message for the user about the result: equivalent or distinct.
-- Create a procedure print_Employee that display the JOB_ID, SALARY, MANAGER_ID and Department_ID of a variable of the record rt_employee. Call the procedure for r_employee1 and r_employee2.**
+- Create a procedure print_Employee that display the JOB_ID, SALARY, MANAGER_ID and Department_ID of a variable of the record rt_employee. Call the procedure for r_employee1 and r_employee2.
 
       DECLARE
       TYPE rt_employee IS RECORD (
@@ -119,6 +128,9 @@ i answered some questions with the pictoral evidence of the output.
        DBMS_OUTPUT.PUT_LINE('Department_ID: ' || emp.Department_ID);
        END;
 
+  **OUTPUT**
+  ![](2.jpg)
+
 ## Question 3: 
 
 **Write a PL/SQL function to determine the number of employees for a given department. The program will search using the department's ID and determine how many employees exists in it. 
@@ -149,6 +161,9 @@ Your program should store the result into a variable. Run the program hardcoding
      res := get_employee_count(did);
      DBMS_OUTPUT.PUT_LINE('Number of employees in department '|| did || ': ' || res);
     END;
+**Output**
+![](3.jpg)
+
 
 ## Question 4: 
 **Modify the written program in Question3 to determine the status of a department. If the department has 30 or more employees, display a message telling a ‘crowded department’. If the 
@@ -170,6 +185,11 @@ id 30, 40 and 50. **Hint: You only need to submit one version of your code but i
     END;
 
 **Output**
+![](4a.jpg)
+
+![](4b.jpg)
+
+![](4c.jpg)
 
 
 ## Question 5: 
@@ -218,7 +238,7 @@ for the WAREHOUSE_ID 5.**
     END;
 
 **Output**
-
+![](5.jpg)
 
 ## Question 6: 
 **Write an anonymous block which uses an order id value and displays DBMS output in the following format : be (where #1 is the quantity and #2 is the product name and #3 is the unit 
@@ -248,11 +268,12 @@ variable: 2354**
     END;
 
 **Output**
+![](6.jpg)
 
 ## Question 7: 
-**
+
 A) Write a PL/SQL function which finds the highest total order and returns this value as a result from the function
-b) Write an anonymous block which calls your function created in Question 7a and prints to the DBMS output (where # is the value returned from the function) **
+b) Write an anonymous block which calls your function created in Question 7a and prints to the DBMS output (where # is the value returned from the function)
 
 **Function**
 
@@ -272,7 +293,7 @@ b) Write an anonymous block which calls your function created in Question 7a and
     END;
 
 **Output**
-
+![](7.jpg)
 
 ## Question 8: 
 **a) Write a PL/SQL procedure named Remove_History that remove a row from the table OEHR_JOB_HISTORY :
@@ -308,6 +329,8 @@ Write an anonymous block which calls the procedure created in for the customer i
     END;
 
 **Output**
+![](8.jpg)
+![](8b.jpg)
 
 ## Question 9 (a): 
 **Define PL/SQL record named order_rec that holds the following columns of the table OEHR_ORDERS: ORDER_ID, ORDER_DATE, ORDER_MODE, CUSTOMER_ID and PROMOTION_ID.
@@ -341,9 +364,13 @@ Use a cursor to fetch all data into a variable of type order_rec and to display 
      CLOSE c_order;
     END;
 
-**Output;**
+**Output**
 
-## Question 9 (c): 
+![](9.jpg)
+![](9b.jpg)
+![](9c.jpg)
+
+## Question 9 (b): 
 **Modify your code in Question 9a to include all the following conditions:
 - Only orders with no promotions are considered,
 - Order mode: online,
@@ -382,6 +409,8 @@ Use a cursor to fetch all data into a variable of type order_rec and to display 
       END;
 
 **Output**
+![](9ii.jpg)
+
 
 ## Question 10: 
 **a) Define PL/SQL trigger that fire for every row before an insert on the table OEHR_ORDERS as 
@@ -408,6 +437,9 @@ b) Create an insert statement to test the trigger with the following values:
 
       INSERT INTO OEHR_ORDERS (order_id, order_date, order_mode, customer_id)
       VALUES (1, SYSDATE, 'online', 101);
+
+**OUTPUT**
+![](10.jpg)
 
 ## Question 11: 
 **Write an anonymous block using PL/SQL that contains Varray with the element type 
@@ -476,4 +508,6 @@ total:$220.00_
 
 
 **OUTPUT**
-
+![](10a.jpg)
+![](10b.jpg)
+![](10c.jpg)
