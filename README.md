@@ -2,9 +2,8 @@
 
 ![](21.png)
 
-## The aim of this Project is to document how i transformed/mnanipulated a database with PL/SQL. The environment used was the Oracle APEX platform and the database was gotten from the environment.
-i answered some questions with the pictoral evidence of the output.
-
+**The aim of this Project is to document how i transformed/manipulated a database with PL/SQL. The environment used was the Oracle APEX platform and the database was gotten from the environment.
+i answered some questions with the pictoral evidence of the output.**
 ## Question 1
 
 **Create an object type record named order_obj_t that contains all of the attributes of the  OEHR_ORDERS table plus customer’s first and last name, credit limit for this customer as well as  sales person’s last and first name (if any). Write an anonymous block that creates an object using the  order_obj_t type for a specific order ID. Include code for the object type and the block. Run the block with order ID 2458, 2355 and 1456. Include generated output.**
